@@ -24,7 +24,7 @@ def eye_aspect_ratio(eye):
 thresh = 0.25
 frame_check = 20
 detect = dlib.get_frontal_face_detector()
-predict = dlib.shape_predictor(r"C:\Users\raine\Downloads\shape_predictor_68_face_landmarks (1).dat")
+predict = dlib.shape_predictor(r"C:\Users\kirti\Downloads\shape_predictor_68_face_landmarks (1).dat")
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["left_eye"]
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["right_eye"]
 flag = 0
@@ -218,3 +218,4 @@ class MonitoringPage(tk.Frame):
 if __name__ == "__main__":
     app = Application()
     app.mainloop()
+
